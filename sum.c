@@ -1,14 +1,13 @@
 #include<stdio.h>
-void sum(int,int); //Function define
+int sum(int a,int b);
 
 int main()
 {	
 	int num1=4,num2=5;
+	sum(num1,num2); 
 	
-	sum(num1,num2); //function calling
-}
-
-void sum(int a,int b) //function declare
+int sum(int a,int b) 
 {
-	printf("The sum :%d",a+b);
+	printf("The sum of the two numbers is : ");
+	return a+b;
 }
